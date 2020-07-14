@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Places tracker</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/shop-homepage.css" rel="stylesheet">
+    <link href="css/shop-item.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Places Tracker</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+
+          <ul class="navbar-nav ml-auto">
+              <form id="place-search-form" class="form-inline">
+                  <input class="form-control" type="search" placeholder="buscar sitio" name="query"><!-- Eliminar valor de ejemplo -->
+                  <input class="form-control" type="submit" value="Buscar">
+                </form>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-3">
+
+          <h2 class="my-4">Categorias</h2>
+          <div class="list-group">
+            <a href="#" class="list-group-item" category-id="restaurant">Restaurantes</a>
+            <a href="#" class="list-group-item" category-id="gym">Gimnasios</a>
+            <a href="#" class="list-group-item" category-id="musume">Múseos</a>
+            <a href="#" class="list-group-item" category-id="movie_theater">Cinema</a>
+            <a href="#" class="list-group-item" category-id="night_club">Discotecas</a>
+          </div>
+
+        </div>
+        <!-- /.col-lg-3 -->
+        <!-- !ELEMENTO AUXILIAR PARA INVOCAR LOS METODOS DE GOOGLEMAPS -->
+        <div id="map">Mapa Auxiliar</div>
+        <div class="col-lg-9">
+          <h2 class="my-4" id="container-card-title"></h2>
+          <div class="row categories-container">
+            <!-- ?CATEGORIES CONTAINER-->
+            <!--!TEST MODO-->
+          </div>
+          <!-- /.row -->
+
+        </div>
+        <!-- /.col-lg-9 -->
+
+      </div>
+      <!-- /.row -->
+      <!-- / VISTA ITEM -->
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <script src="index.min.js"></script>
+
+  </body>
+
+</html>
